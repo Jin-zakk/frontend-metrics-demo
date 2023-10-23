@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style></style>
+    <title></title>
+  </head>
+  <body>
+      <button onclick="onClick(1)">button 1</button>
+      <button onclick="onClick(2)">button 2</button>
+      <button onclick="onClick(3)">button 3</button>
+
+      <script type="text/javascript">
+        function onClick(buttonId) {
+          console.log('button click ', buttonId)
+          fetch(`/button-click?buttonId=${buttonId}`);
+        }
+      </script>
+  </body>
+</html>
